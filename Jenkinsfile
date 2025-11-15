@@ -6,7 +6,7 @@ pipeline {
       steps {
         sh '''docker kill httpd_s1 || true
         docker rm httpd_s1 || true
-        cp /root/.jenkins/workspace/a1/index.html /var/lib/docker/volumes/A1/_data/
+        cp index.html /var/lib/docker/volumes/A1/_data/
         '''
       }
     }
